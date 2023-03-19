@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <title>감정 다이어리</title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <h1>감정 다이어리</h1>
+    <form th:action="@{/diary/write}" method="post">
+      <p>오늘의 감정을 입력해 주세요:</p>
+      <input type="text" name="title"><br><br>
+      <textarea name="content" rows="5" cols="50"></textarea>
+      <br>
+      <button type="submit">저장</button>
+    </form>
+  </body>
+</html>
